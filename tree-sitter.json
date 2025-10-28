@@ -1,0 +1,39 @@
+{
+  "grammars": [
+    {
+      "name": "freebasic",
+      "camelcase": "FreeBasic",
+      "scope": "source.freebasic",
+      "path": ".",
+      "file-types": [
+        "bas",
+        "bi"
+      ],
+      "highlights": "queries/highlights.scm",
+      "tags": "queries/tags.scm",
+      "injection-regex": "^(freebasic|fb|bas)$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "FreeBasic grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Raffaele",
+        "email": "raffaele@student.dev"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/raffaele/tree-sitter-freebasic"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
