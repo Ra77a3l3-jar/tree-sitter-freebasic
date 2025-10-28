@@ -1,0 +1,33 @@
+* text=auto eol=lf
+
+src/*.json linguist-generated
+src/parser.c linguist-generated
+src/tree_sitter/* linguist-generated
+
+bindings/c/** linguist-generated
+CMakeLists.txt linguist-generated
+Makefile linguist-generated
+
+bindings/rust/* linguist-generated
+Cargo.toml linguist-generated
+Cargo.lock linguist-generated
+
+bindings/node/* linguist-generated
+binding.gyp linguist-generated
+package.json linguist-generated
+package-lock.json linguist-generated
+
+bindings/python/** linguist-generated
+setup.py linguist-generated
+pyproject.toml linguist-generated
+
+bindings/go/* linguist-generated
+go.mod linguist-generated
+go.sum linguist-generated
+
+bindings/swift/** linguist-generated
+Package.swift linguist-generated
+Package.resolved linguist-generated
+
+build.zig linguist-generated
+build.zig.zon linguist-generated
