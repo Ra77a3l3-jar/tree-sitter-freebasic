@@ -1,0 +1,26 @@
+[package]
+name = "tree-sitter-freebasic"
+description = "FreeBasic grammar for tree-sitter"
+version = "0.1.0"
+authors = ["Raffaele Meo <Ra77a3l3-jar@users.noreply.github.com>"]
+keywords = ["incremental", "parsing", "freebasic"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/Ra77a3l3-jar/tree-sitter-freebasic"
+edition = "2021"
+license = "MIT"
+autoexamples = false
+
+build = "bindings/rust/build.rs"
+include = ["LICENSE", "bindings/rust/*", "grammar.js", "queries/*", "src/*", "tree-sitter.json"]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter-language = "0.1"
+
+[build-dependencies]
+cc = "1.2"
+
+[dev-dependencies]
+tree-sitter = "0.25.4"
