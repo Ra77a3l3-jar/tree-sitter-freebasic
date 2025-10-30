@@ -1,0 +1,49 @@
+==================
+Function definition
+==================
+
+FUNCTION add(a AS INTEGER, b AS INTEGER) AS INTEGER
+    RETURN a + b
+END FUNCTION
+
+---
+
+(source_file
+  (function_declaration
+    (identifier)
+    (parameter_list
+      (parameter
+        (identifier)
+        (type_identifier))
+      (parameter
+        (identifier)
+        (type_identifier)))
+    (type_identifier)
+    (return_statement
+      (expression
+        (binary_expression
+          (identifier)
+          (identifier))))))
+
+==================
+Subroutine definition
+==================
+
+SUB greet(name AS STRING)
+    PRINT "Hello, "; name
+END SUB
+
+---
+
+(source_file
+  (sub_declaration
+    (identifier)
+    (parameter_list
+      (parameter
+        (identifier)
+        (type_identifier)))
+    (print_statement
+      (expression
+        (string_literal))
+      (expression
+        (identifier)))))

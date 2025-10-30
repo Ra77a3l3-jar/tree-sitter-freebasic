@@ -1,0 +1,71 @@
+==================
+For loop
+==================
+
+FOR i = 1 TO 10
+    PRINT i
+NEXT i
+
+---
+
+(source_file
+  (for_statement
+    (identifier)
+    (expression
+      (number_literal))
+    (expression
+      (number_literal))
+    (print_statement
+      (expression
+        (identifier)))
+    (identifier)))
+
+==================
+While loop
+==================
+
+WHILE x < 100
+    x = x + 1
+WEND
+
+---
+
+(source_file
+  (while_statement
+    (expression
+      (binary_expression
+        (identifier)
+        (number_literal)))
+    (assignment_statement
+      (identifier)
+      (expression
+        (binary_expression
+          (identifier)
+          (number_literal))))))
+
+==================
+Do-until loop
+==================
+
+DO
+    PRINT x
+    x = x + 1
+LOOP UNTIL x > 10
+
+---
+
+(source_file
+  (do_statement
+    (print_statement
+      (expression
+        (identifier)))
+    (assignment_statement
+      (identifier)
+      (expression
+        (binary_expression
+          (identifier)
+          (number_literal))))
+    (expression
+      (binary_expression
+        (identifier)
+        (number_literal)))))
